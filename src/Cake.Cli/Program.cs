@@ -93,6 +93,7 @@ public class Program
         // Subcommands
         rootCommand.AddCommand(InstallSkillCommand.Create(services));
         rootCommand.AddCommand(CreateCommand.Create(services));
+        rootCommand.AddCommand(AddProjectCommand.Create(services));
 
         rootCommand.SetHandler(async () =>
         {
