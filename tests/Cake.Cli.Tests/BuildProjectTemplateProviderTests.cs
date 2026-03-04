@@ -133,7 +133,7 @@ public class BuildProjectTemplateProviderTests
             new[] { "MyLib.Core" });
 
         Assert.Contains("RootDirectory", result);
-        Assert.Contains("new DirectoryInfo(Environment.CurrentDirectory).Parent!.FullName", result);
+        Assert.Contains("new DirectoryInfo(System.Environment.CurrentDirectory).Parent!.FullName", result);
     }
 
     [Fact]

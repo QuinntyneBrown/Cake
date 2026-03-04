@@ -80,7 +80,7 @@ public class BuildProjectTemplateProvider
             {
                 public BuildContext(ICakeContext context) : base(context) { }
 
-                public string RootDirectory => new DirectoryInfo(Environment.CurrentDirectory).Parent!.FullName;
+                public string RootDirectory => new DirectoryInfo(System.Environment.CurrentDirectory).Parent!.FullName;
             }
 
             [TaskName("GenerateSolution")]
