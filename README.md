@@ -6,15 +6,14 @@ Built with `System.CommandLine`, Microsoft Extensions (DI, Logging, Configuratio
 
 ## Install
 
-```bat
-eng\scripts\install-cli.bat
+```bash
+dotnet tool install -g QuinntyneBrown.Cake.Cli
 ```
 
-Or manually:
+### Install from source
 
-```bash
-dotnet pack src/Cake.Cli/Cake.Cli.csproj -o ./nupkg
-dotnet tool install -g QuinntyneBrown.Cake.Cli --add-source ./nupkg --version 0.1.0
+```bat
+eng\scripts\install-cli.bat
 ```
 
 ## Commands
